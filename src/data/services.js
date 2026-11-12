@@ -1,0 +1,11 @@
+export const services = [
+  { title: 'Local City Travel', image: 'photo-1598434192043-71111c1b3f11', alt: 'Historic temple architecture in Madurai', text: 'Get around Madurai with a local travel plan tailored to your day.', icon: 'MapPin' },
+  { title: 'Outstation Trips', image: 'photo-1500530855697-b586d89ba3ee', alt: 'Scenic road winding through a green landscape', text: 'Plan an easy intercity journey from Madurai to destinations across South India.', icon: 'Route' },
+  { title: 'Family Trips', image: 'photo-1511895426328-dc8714191300', alt: 'Family enjoying time together outdoors', text: 'Make room for the whole family with a vehicle and itinerary that fit your plans.', icon: 'UsersRound' },
+  { title: 'Friends Group Trips', image: 'photo-1529156069898-49953e39b3ac', alt: 'Friends spending time together on a trip', text: 'Bring everyone along for a shared getaway, celebration or day out.', icon: 'UsersRound' },
+  { title: 'Temple Tours', image: 'photo-1606293926075-69a00dbdde81', alt: 'Colorful South Indian temple gopuram', text: 'Explore revered temples and heritage stops with a journey planned around you.', icon: 'Landmark' },
+  { title: 'Airport Pickup & Drop', image: 'photo-1436491865332-7a61a109cc05', alt: 'Passenger aircraft at an airport', text: 'Arrange a convenient pickup or drop for your Madurai airport travel.', icon: 'Plane' },
+  { title: 'Hill Station Trips', image: 'photo-1464822759023-fed622ff2c3b', alt: 'Mountain landscape under a clear sky', text: 'Head for the hills, from Kodaikanal and Ooty to your chosen cool-weather escape.', icon: 'Mountain' },
+  { title: 'Corporate Travel', image: 'photo-1497366754035-f200968a6e72', alt: 'Bright professional office interior', text: 'Coordinate comfortable transport for team visits, meetings and business travel.', icon: 'BriefcaseBusiness' },
+  { title: 'Customized Tour Packages', image: 'photo-1516483638261-f4dbaf036963', alt: 'Colorful hill town viewed from above', text: 'Tell us what you want to see and we can help shape the route around your trip.', icon: 'Compass' },
+]
