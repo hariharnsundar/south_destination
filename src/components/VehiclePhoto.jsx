@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { createPortal } from 'react-dom'
 import { X } from 'lucide-react'
 
-export default function VehiclePhoto({ vehicle }) {
+export default function VehiclePhoto({ vehicle, fitContain = false }) {
   const [isOpen, setIsOpen] = useState(false)
   const [hasError, setHasError] = useState(false)
 
@@ -22,7 +22,7 @@ export default function VehiclePhoto({ vehicle }) {
       {hasError ? (
         <div className="vehicle-image-pending">Photo unavailable</div>
       ) : (
-        <button className="vehicle-photo-button" type="button" onClick={() => setIsOpen(true)} aria-label={`Enlarge ${vehicle.name} photo`}>
+        <button className={`vehicle-photo-button${fitContain ? ' vehicle-photo-contain' : ''}`} type="button" onClick={() => setIsOpen(true)} aria-label={`Enlarge ${vehicle.name} photo`}>
           <img src={vehicle.image} alt={vehicle.alt} loading="lazy" onError={() => setHasError(true)} />
         </button>
       )}

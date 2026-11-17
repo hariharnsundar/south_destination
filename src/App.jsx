@@ -11,6 +11,7 @@ import Destinations from './pages/Destinations.jsx'
 import DestinationDetail from './pages/DestinationDetail.jsx'
 import Contact from './pages/Contact.jsx'
 import { destinations } from './data/destinations.js'
+import { MotionConfig } from 'framer-motion'
 
 const pageMeta = {
   '/': ['South Destination | Travels in Madurai', 'Travel comfortably from Madurai with South Destination. Enquire about local journeys, outstation travel and South India tours.'],
@@ -57,6 +58,7 @@ function PageMetadata() {
 
 export default function App() {
   return (
+    <MotionConfig reducedMotion="user">
     <>
       <PageMetadata />
       <Navbar />
@@ -75,5 +77,6 @@ export default function App() {
       <Footer />
       <FloatingWhatsApp />
     </>
+    </MotionConfig>
   )
 }

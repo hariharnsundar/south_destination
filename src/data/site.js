@@ -6,7 +6,7 @@ export const site = {
   phone: '+917092846305',
   phoneDisplay: '+91 70928 46305',
   whatsapp: '+917092846305',
-  email: '',
+  email: 'southdestination33@gmail.com',
   instagram: '',
   facebook: '',
   maps: 'https://maps.google.com/?q=Madurai%2C+Tamil+Nadu',

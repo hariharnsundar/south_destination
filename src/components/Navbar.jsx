@@ -4,6 +4,7 @@ import { Menu, X, MoveUpRight } from 'lucide-react'
 import { navLinks, site } from '../data/site.js'
 import WhatsAppLink from './WhatsAppLink.jsx'
 import { bookingMessage } from '../utils/whatsapp.js'
+import { motion } from 'framer-motion'
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
@@ -14,7 +15,7 @@ export default function Navbar() {
   }
 
   return (
-    <header className="site-header">
+    <motion.header className="site-header" initial={{ opacity: 0, y: -8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.45, ease: 'easeOut' }}>
       <div className="nav-wrap">
         <Link className="brand" to="/" onClick={closeMenu} aria-label={`${site.name} home`}>
           <span className="brand-mark" aria-hidden="true"><span>SD</span></span>
@@ -32,6 +33,6 @@ export default function Navbar() {
           <WhatsAppLink className="nav-book" message={bookingMessage()} icon={false}>Book a trip <MoveUpRight size={15} /></WhatsAppLink>
         </nav>
       </div>
-    </header>
+    </motion.header>
   )
 }

@@ -5,7 +5,6 @@ import DestinationCard from '../components/DestinationCard.jsx'
 import TravelImage from '../components/TravelImage.jsx'
 import WhatsAppLink from '../components/WhatsAppLink.jsx'
 import { destinations, destinationImageSources, travelExperiences } from '../data/destinations.js'
-import { imageUrl } from '../utils/images.js'
 
 const tamilNaduDestinations = destinations.filter((destination) => destination.state === 'Tamil Nadu')
 const keralaDestinations = destinations.filter((destination) => destination.state === 'Kerala')
@@ -17,8 +16,6 @@ export default function Destinations() {
         eyebrow="A REGION MADE FOR THE ROAD"
         title="Explore South India with South Destination"
         text="Comfortable journeys from Madurai to beautiful destinations across Tamil Nadu and Kerala."
-        image={imageUrl('photo-1464822759023-fed622ff2c3b', 1800)}
-        alt="Scenic mountain route in South India"
       />
 
       <section className="section-pad destinations-page">

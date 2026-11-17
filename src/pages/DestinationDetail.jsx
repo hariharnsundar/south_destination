@@ -3,7 +3,8 @@ import { ArrowLeft, MapPin, CarFront, CheckCircle2 } from 'lucide-react'
 import { Link, useParams } from 'react-router-dom'
 import TravelImage from '../components/TravelImage.jsx'
 import WhatsAppLink from '../components/WhatsAppLink.jsx'
-import { destinations, destinationImageSources } from '../data/destinations.js'
+import { destinations } from '../data/destinations.js'
+import { maduraiPanorama, maduraiPanoramaAlt } from '../utils/images.js'
 
 export default function DestinationDetail() {
   const { slug } = useParams()
@@ -31,9 +32,8 @@ export default function DestinationDetail() {
   return (
     <>
       <section className="page-intro">
-        <TravelImage className="page-intro-image" id={destination.image} alt={destination.alt} width={1800} />
+        <TravelImage className="page-intro-image" src={maduraiPanorama} alt={maduraiPanoramaAlt} />
         <div className="page-intro-shade" />
-        <a className="image-source detail-image-source" href={destinationImageSources[destination.slug].url} target="_blank" rel="noreferrer">Photo: {destinationImageSources[destination.slug].author}</a>
         <div className="page-shell page-intro-content">
           <Link to="/destinations" className="text-action light-action"><ArrowLeft size={16} /> Back to destinations</Link>
           <p className="eyebrow eyebrow-light">{destination.state} · From {destination.startingPoint}</p>
